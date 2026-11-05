@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Workshop Signup</title>
+</head>
+<body>
+    <main>
+        <h1>Student Workshop Signup</h1>
+        <form method="post" action="signup-confirm.php">
+            <p>
+                <label for="student-name">Student name:</label>
+                <input type="text" id="student-name" name="student_name" required>
+            </p>
+
+            <p>
+                <label for="session-time">Session time:</label>
+                <select id="session-time" name="session_time" required>
+                    <option value="">Choose a session</option>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                </select>
+            </p>
+
+            <fieldset>
+                <legend>Preferred format:</legend>
+                <label><input type="radio" name="format" value="In Person"> In Person</label>
+                <label><input type="radio" name="format" value="Online"> Online</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Optional add-ons:</legend>
+                <label><input type="checkbox" name="addons[]" value="Study Group"> Study Group</label>
+                <label><input type="checkbox" name="addons[]" value="Extra Practice Set"> Extra Practice Set</label>
+            </fieldset>
+
+            <p>
+                <label for="instructor-question">Question for the instructor:</label><br>
+                <textarea id="instructor-question" name="instructor_question" rows="5" cols="40"></textarea>
+            </p>
+
+            <button type="submit">Submit signup</button>
+        </form>
+    </main>
+</body>
+</html>
