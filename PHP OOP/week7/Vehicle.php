@@ -7,10 +7,8 @@ abstract class Vehicle {
         $this->model = $model;
         $this->dailyRentalRate = $dailyRentalRate;
     }
-   final public function setMake($make) {
-        $this->make = $make;
-    }
-    public function getMake() {
+  
+    final public function getMake() {
         return $this->make;
     }
     public function getModel() {
